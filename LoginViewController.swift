@@ -17,7 +17,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signupUsernameTextfield: UITextField!
     @IBOutlet weak var signupPasswordTextfield: UITextField!
-    @IBOutlet weak var loginBtn: UIButton!
+
+    @IBOutlet weak var wrongLabel: UILabel!
+
+    @IBOutlet weak var signupButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     var users: [NSManagedObject] = []
     
     var userOK:Bool = false
@@ -28,8 +34,34 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func loginPressed(_ sender: Any) {
-        //if usernameTextField == users.
+    
+    @IBAction func buttonAct(sender: UIButton){
+        switch sender {
+        case loginButton:
+            print("Login")
+                checkUser()
+                print("USEROK")
+                print(userOK)
+                if (userOK == false){
+                    wrongLabel.isHidden=false
+                    wrongLabel.pulsate()
+                     }
+                     else{
+                        performSegue(withIdentifier: "loginSegue", sender: nil)
+                         print("login!!!")
+                 }
+        case signupButton:
+            print("signup")
+            wrongLabel.isHidden=true
+            performSegue(withIdentifier: "signupSegue", sender: nil)
+            
+        default:
+            print("Default")
+        }
+    }
+    
+    
+    
         
         /*if (usernameTextField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true) || (passwordTextField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true) {
             //noUser()
@@ -38,37 +70,8 @@ class LoginViewController: UIViewController {
             self.present(alert, animated: true)*/
         }
         else{*/
-   /*         checkUser()
-            print("USEROK")
-            print(userOK)
-            if (userOK == false){
-                /*let alert1 = UIAlertController(title: "No input", message: "Please enter a valid username and password", preferredStyle: .alert)
-                alert1.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alert1, animated: true)*/
-                // the alert view
-                let alert = UIAlertController(title: "", message: "alert disappears after 5 seconds", preferredStyle: .alert)
-                self.present(alert, animated: true, completion: nil)
-
-                // change to desired number of seconds (in this case 5 seconds)
-                let when = DispatchTime.now() + 1
-                DispatchQueue.main.asyncAfter(deadline: when){
-                  // your code with delay
-                  alert.dismiss(animated: true, completion: nil)
-                }
-                
-            }
-            else{
-                print("login!!!")
-            }
-            //if (usernameTextField.text)*/
-        }
-
-    //}
-    
-
+   
  
-    
-    
     
     func checkUser(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -77,7 +80,6 @@ class LoginViewController: UIViewController {
           
         let managedContext = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "User")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
         request.returnsObjectsAsFaults = false
         do {
             let result = try managedContext.fetch(request)
@@ -87,23 +89,13 @@ class LoginViewController: UIViewController {
                     print("USER OK2")
                     print(userOK)
                 }
-                else {
-                    //noUser()
-                }
           }
             
         } catch {
-            
             print("Failed")
         }
     }
  /*
-    func noUser(){
-        let alert = UIAlertController(title: "No input", message: "Please enter a valid username and password", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
-    }
-    */
     //Fetching the core data
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -121,7 +113,7 @@ class LoginViewController: UIViewController {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
-    
+    */
     
     /*
     // MARK: - Navigation
