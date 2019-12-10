@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        userOK = false
         // Do any additional setup after loading the view.
     }
     
@@ -49,6 +50,9 @@ class LoginViewController: UIViewController {
                      else{
                         performSegue(withIdentifier: "loginSegue", sender: nil)
                          print("login!!!")
+                    usernameTextField.text=""
+                    passwordTextField.text=""
+                    userOK = false
                  }
         case signupButton:
             print("signup")
@@ -60,19 +64,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
-    
-        
-        /*if (usernameTextField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true) || (passwordTextField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true) {
-            //noUser()
-            /*let alert = UIAlertController(title: "No input", message: "Please enter a valid username and password", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-            self.present(alert, animated: true)*/
-        }
-        else{*/
-   
- 
-    
+
     func checkUser(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
           return
@@ -95,34 +87,4 @@ class LoginViewController: UIViewController {
             print("Failed")
         }
     }
- /*
-    //Fetching the core data
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-      
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
-
-        do {
-            users = try managedContext.fetch(fetchRequest)
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-        }
-    }
-    */
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
