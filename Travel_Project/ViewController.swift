@@ -114,14 +114,24 @@ class ViewController: UIViewController, CountryDataProtocol  {
         else{
             print("LOST")
         }
+        let currencies : NSArray = (data.value(forKey: "currencies") as? NSArray)!
+        let currency : NSDictionary? = currencies[0] as? NSDictionary
+   
+        let languages : NSArray = (data.value(forKey: "languages") as? NSArray)!
+        let language : NSDictionary? = languages[0] as? NSDictionary
         
         let name = data.value(forKey: "name")
         let capital = data.value(forKey: "capital")
         let population = data.value(forKey: "population")
-        let language = data.value(forKey: "language")
+        let countryLanguage = language?.value(forKey: "name")
         let region = data.value(forKey: "region")
-        //let government = data.value(forKey: "language")
         let area = data.value(forKey: "area")
+        let countryCurrency = currency?.value(forKey: "name")
+        
+        
+        
+        print(countryCurrency)
+        //let government = data.value(forKey: "language")
        // let currencies = data.value(forKey: "currencies") as? NSArray
         //print(currencies.value(forKey: "code"))
        // let currency = currencies![1]
@@ -153,12 +163,15 @@ class ViewController: UIViewController, CountryDataProtocol  {
             self.countryNameLabel.isHidden = false
             self.populationLabel.text="\(population!)"
             self.populationLabel.isHidden = false
-            //self.languagesLabel.text="\(language!)"
+            self.languagesLabel.text="\(countryLanguage!)"
+            self.languagesLabel.isHidden = false
             self.regionLabel.text="\(region!)"
             self.regionLabel.isHidden = false
-            self.areaLabel.text="\(area!)"
+            self.areaLabel.text="\(area!) km^2"
             self.areaLabel.isHidden = false
-            //self.currencyLabel.text="\(currency!)"
+            self.currencyLabel.text="\(countryCurrency!)"
+            self.currencyLabel.isHidden = false
+
             //self.flagView.image = flag as? UIImage
             
         }
