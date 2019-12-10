@@ -35,40 +35,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0I2-i9-Jpg">
-                                <rect key="frame" x="24" y="546" width="142" height="82"/>
+                                <rect key="frame" x="24" y="546" width="133.5" height="123"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3g-Tn-4f5">
-                                        <rect key="frame" x="0.0" y="0.0" width="142" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official languages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-6x-aBy">
-                                        <rect key="frame" x="0.0" y="20.5" width="142" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0b-6x-aBy">
+                                        <rect key="frame" x="0.0" y="20.5" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-jj-lsc">
-                                        <rect key="frame" x="0.0" y="20.5" width="142" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="41" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-sE-Gtx">
-                                        <rect key="frame" x="0.0" y="41" width="142" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="61.5" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biC-Hb-8b7">
-                                        <rect key="frame" x="0.0" y="61.5" width="142" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biC-Hb-8b7">
+                                        <rect key="frame" x="0.0" y="82" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpk-AI-S2g">
-                                        <rect key="frame" x="0.0" y="61.5" width="142" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="102.5" width="133.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -76,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UeV-ZN-cb5">
-                                <rect key="frame" x="204" y="546" width="0.0" height="0.0"/>
+                                <rect key="frame" x="195.5" y="546" width="0.0" height="0.0"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U76-9d-pyw">
                                         <rect key="frame" x="0.0" y="0.0" width="183" height="0.0"/>
@@ -122,10 +122,6 @@
                                     <constraint firstAttribute="width" secondItem="Aom-bJ-vvX" secondAttribute="height" multiplier="90:73" id="Jy9-nT-b5t"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bO5-3y-bKq">
-                                <rect key="frame" x="60" y="653" width="289" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyR-f1-gnK">
                                 <rect key="frame" x="119" y="407" width="176" height="30"/>
                                 <color key="backgroundColor" red="0.70515882969999999" green="0.90991026159999999" blue="0.89412075280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -134,7 +130,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonActWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uoM-sL-yVR"/>
-                                    <action selector="loginPressed:" destination="JH6-hs-bA8" eventType="touchUpInside" id="dfL-9Q-X8Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oeg-GV-qGc">
@@ -145,7 +140,6 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonActWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyD-gV-yyG"/>
-                                    <action selector="loginPressed:" destination="JH6-hs-bA8" eventType="touchUpInside" id="LRu-7C-S3f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,9 +177,6 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vk6-WG-n7D" kind="show" id="lm9-pq-Cv2"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="gbA-Rc-dY3">
@@ -283,18 +274,6 @@
                                 <color key="textColor" red="0.78720486160000003" green="0.71299666169999998" blue="0.79608643050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0m-kd-KXD">
-                                <rect key="frame" x="117" y="501" width="180" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.70515882968902588" green="0.90991026163101196" blue="0.89412075281143188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.052937485280000002" green="0.42299088839999999" blue="0.48237597939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginPressed:" destination="JH6-hs-bA8" eventType="touchUpInside" id="7lf-Qb-76Q"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="t7V-uZ-fPP"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Travel Earth" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evk-oa-b8C">
                                 <rect key="frame" x="128" y="98" width="157" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -304,6 +283,37 @@
                                 <color key="shadowColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong Username or Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-Ih-g6W">
+                                <rect key="frame" x="90" y="564" width="232" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fy-RG-vz5">
+                                <rect key="frame" x="132" y="711" width="151" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70515882969999999" green="0.90991026159999999" blue="0.89412075280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.052937485280000002" green="0.42299088839999999" blue="0.48237597939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActWithSender:" destination="JH6-hs-bA8" eventType="touchUpInside" id="cGl-cm-dPT"/>
+                                    <action selector="signUpPressed:" destination="4ID-cA-KfU" eventType="touchUpInside" id="aJS-X1-1PD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-9c-Fpl">
+                                <rect key="frame" x="131" y="510" width="151" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70515882969999999" green="0.90991026159999999" blue="0.89412075280000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.052937485280000002" green="0.42299088839999999" blue="0.48237597939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActWithSender:" destination="JH6-hs-bA8" eventType="touchUpInside" id="Ony-xj-zyp"/>
+                                    <action selector="signUpPressed:" destination="4ID-cA-KfU" eventType="touchUpInside" id="V5y-d7-Cxn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15294456249999999" green="0.0" blue="0.22572676089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -322,16 +332,22 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="countryNameLabel" destination="Ugk-6F-kll" id="ymP-zI-hch"/>
-                        <outlet property="loginBtn" destination="L0m-kd-KXD" id="NzH-12-Xhi"/>
+                        <outlet property="loginButton" destination="g8R-9c-Fpl" id="yt7-My-UBv"/>
                         <outlet property="passwordTextField" destination="2G5-m6-kZC" id="Lug-1v-zta"/>
+                        <outlet property="signupButton" destination="8Fy-RG-vz5" id="qkE-eh-Ky9"/>
                         <outlet property="signupPasswordTextfield" destination="Zot-SS-6RO" id="Tac-EV-I11"/>
                         <outlet property="signupUsernameTextfield" destination="B8t-sa-3X1" id="uEv-Yz-MIw"/>
                         <outlet property="usernameTextField" destination="ePe-bV-4LY" id="hVt-Hh-qVg"/>
+                        <outlet property="wrongLabel" destination="rsH-Ih-g6W" id="bLm-m7-Qap"/>
+                        <segue destination="4ID-cA-KfU" kind="popoverPresentation" identifier="signupSegue" popoverAnchorView="Iwu-Xq-wxM" id="oc4-Qc-FK7">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginSegue" id="zii-5Z-BBs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZe-Pz-k4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-230"/>
+            <point key="canvasLocation" x="895.6521739130435" y="-230.35714285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="E2Y-Me-3hH">
@@ -418,7 +434,7 @@
                                 </segments>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBh-Y4-jNe">
-                                <rect key="frame" x="157" y="98" width="100" height="34"/>
+                                <rect key="frame" x="157" y="54" width="100" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.77950686219999998" green="0.71676856280000001" blue="0.7960864902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -454,11 +470,11 @@
             <objects>
                 <viewController title="Sign up" id="4ID-cA-KfU" customClass="signUpViewController" customModule="Travel_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WjA-pr-sE1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Earth" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZN-ke-Kpx">
-                                <rect key="frame" x="143.5" y="59" width="127.5" height="31"/>
+                                <rect key="frame" x="143.5" y="15" width="127.5" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.3799683452" green="0.72468632460000004" blue="0.7961067557" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -466,7 +482,7 @@
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="Mrv-3w-KB5">
-                                <rect key="frame" x="97.5" y="98" width="219" height="177.5"/>
+                                <rect key="frame" x="97.5" y="54" width="219" height="177.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mrv-3w-KB5" secondAttribute="height" multiplier="90:73" id="csY-iN-Rtd"/>
                                 </constraints>
@@ -499,8 +515,6 @@
                                     <color key="titleColor" red="0.052937485280000002" green="0.42299088839999999" blue="0.48237597939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginPressed:" destination="JH6-hs-bA8" eventType="touchUpInside" id="8dW-8b-uOc"/>
-                                    <action selector="signUpPressed:" destination="JH6-hs-bA8" eventType="touchUpInside" id="5ch-yT-Niw"/>
                                     <action selector="signUpPressed:" destination="4ID-cA-KfU" eventType="touchUpInside" id="qHv-L1-7Ga"/>
                                 </connections>
                             </button>
