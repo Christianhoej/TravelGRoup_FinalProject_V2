@@ -36,16 +36,6 @@ class signUpViewController: UIViewController {
             let alert2 = UIAlertController(title: "Done!", message: "Go back and log in", preferredStyle: .alert)
             alert2.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             self.present(alert2, animated: true)
-        /*let alert = UIAlertController(title: "User added!", message: "Please enter your username and password above", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-        self.present(alert, animated: true)*/
-        print("SIGNUPGODKENDT")
-            //self.performSegue(withIdentifier: "toLoginScreen", sender: self)
-            //self.presentingViewController!.presentingViewController!.dismiss(animated: false, completion: nil)
-
-                //sender.pulsate()
-                //let vc = DisplayViewContoller()
-                //vc.countryName = countryName.text!
             }
     }
     
@@ -72,15 +62,4 @@ class signUpViewController: UIViewController {
             abort()
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
