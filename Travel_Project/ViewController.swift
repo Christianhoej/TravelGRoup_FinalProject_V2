@@ -1,14 +1,9 @@
-//
-//  ViewController.swift
-//  Travel_Project
-//
-//  Created by Hoej, Christian R on 11/11/19.
-//  Copyright © 2019 Hoej, Christian R. All rights reserved.
-//
 
 import UIKit
 
-class ViewController: UIViewController, CountryDataProtocol  {
+class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource, CountryDataProtocol  {
+    
+    let myPickerData = [String](arrayLiteral: "Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","AG","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia","Botswana","Brazil","Brunei","Bulgaria","BF","Burundi","Cambodia","Cameroon","CV","Chad","Chile","China","Colombia","Congo","CK","CR","CI","Croatia","Cuba","Cyprus","CZ","Denmark","Djibouti","Dominica","DO","Ecuador","Egypt","Equatorial Guinea","Estonia","Ethiopia","FK","FO","Fiji","Finland","France","French Polynesia","Gabon","Gambia","GB","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","HK","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","IM","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait","KR","KY","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","LK","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Namibia","Nepal","Netherlands","NC","NZ","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Palestine","Panama","PG","Paraguay","Peru","Philippines","Poland","Portugal","PR","Qatar","Reunion","Romania","Russia","Rwanda","PM","Satellite","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Spain","St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname","Swaziland","Sweden","Switzerland","SV","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Togo","Tonga","TT","Tunisia","Turkey","Turkmenistan","TC","Uganda","Ukraine","AE","USA", "Uruguay","Uzbekistan","Venezuela","Vietnam","VG","Yemen","ZA","Zambia","Zimbabwe")
 
     @IBOutlet weak var countryName: UITextField!
     @IBOutlet weak var countryNameLabel: UILabel!
@@ -29,12 +24,30 @@ class ViewController: UIViewController, CountryDataProtocol  {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSession.delegate = self
-        
+        let thePicker = UIPickerView()
+        thePicker.delegate = self
+        countryName.inputView = thePicker
         //
         
         
     }
-    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return myPickerData.count
+    }
+
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return myPickerData[row]
+    }
+
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        countryName.text = myPickerData[row]
+    }
+
+
     //let countryData = Countrydata()
    
     //let datasession = Countrydata();
